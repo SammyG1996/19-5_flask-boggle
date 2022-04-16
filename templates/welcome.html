@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}Boggle{% endblock %}
+
+{% block content %}
+<form action="" method="">
+<input type="text" id="textbox" autocomplete="off">
+<button type="submit">Guess!</button>
+</form>
+<table>
+{% for row in board%}
+<tr>
+  {% for item in row %}
+  <td>{{item}}</td>
+  {% endfor %}
+</tr>
+{% endfor %}
+</table>
+{% endblock %}
